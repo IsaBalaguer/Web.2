@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    font-family: aladin;
+}
+
+@font-face {
+    font-family: aladin ;
+    src: url(../fonts/Aladin-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    --main-text-color: #F7F7F7;
+    --secondary-text-color:  #b93333ce; 
+}
+
+.clearfix:after {
+    content:"";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.header > .title-img {
+    background-size: 100% 65%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/background.png);
+    height: 100vh; 
+
+   
+}
+
+.header > .title {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: aladin;
+    z-index: 1;
+    
+}
+
+.header > .title-cite {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    font-family: aladin;
+    
+}
+
+.gallery {
+        
+        margin: 0 auto;
+        padding: 5px;
+        
+      }
+      
+.gallery > div {
+        position: relative;
+        float: left;
+        padding: 10px;
+      }
+      
+.gallery > div > img {
+        display: block;
+        width: 150px;
+        transition: .1s transform;
+        transform: translateZ(0); 
+      }
+      
+.gallery > div:hover {
+        z-index: 1;
+      }
+      
+.gallery > div:hover > img {
+        transform: scale(2 , 2);
+        transition: .3s transform;
+      }
+      
+.cf:before, .cf:after {
+        display: table;
+        content: "";
+        line-height: 30px;
+      }
+      
+.cf:after {
+        clear: both;
+      }
+      
+h1 {
+        margin: 40px 0;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        font-family: aladin;
+      }
+
+.title-info {
+    margin: 20px 0;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    font-family: aladin;
+    
+}
+
+.title-gal {
+    margin: 20px 0;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    font-family: aladin;
+    
+}
+
+.title-contact {
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    font-family: aladin;
+    
+}
+
+.title-video {
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+   
+    padding-top: 60px;
+    
+}
+
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.navbar {
+    background-color: rgba(81, 190, 37, 0.788);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar > .navbar-list {
+    list-style: none;
+    margin: 0;
+    float: right;
+    font-size: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: inline;
+    font-size: 16px;
+}
+
+.navbar > .navbar-list > .navbar-item a {
+    padding: 20px;
+    text-decoration: none;
+    color: #f7f7f7;
+    display: inline-block;
+    transition: all 0.5s linear;
+}
+
+.navbar > .navbar-list > .navbar-item.active a{
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    color: var(--main-text-color);
+    background-color: var(--secondary-text-color);
+}
+
+.section-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-reverse {
+    background-color: rgba(85, 190, 37, 0.856);
+    color: var(--main-text-color);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.contact-img {
+    background-image: url(../img/pin-up.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 50vh; 
+    
+    
+}
+
+.info-img {
+    background-image: url(../img/autorretrato.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh; 
+    
+}
+
+.info {
+    width: 80%;
+    text-align: justify;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    font-family: aladin; 
+    margin-right: 30px;
+    
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+   
+}
+
+.form {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    justify-content: center;
+    flex: 1;
+}
+
+.form .form-row {
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start ;
+    
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+.footer {
+        background-color: rgba(81, 190, 37, 0.788);
+        color: var(--main-text-color);
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
